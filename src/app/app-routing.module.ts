@@ -10,6 +10,10 @@ const routes: Routes = [
 		path: 'register',
 		pathMatch: 'full',
 		loadChildren: () => import('./register/register.module').then((m) => m.RegisterModule)
+	},
+	{
+		path: 'master',
+		loadChildren: () => import('./master/master.module').then((m) => m.MasterModule)
 	}
 ];
 
