@@ -8,7 +8,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
 	declarations: [ AppComponent ],
-	imports: [ BrowserModule, AppRoutingModule, BrowserAnimationsModule, LayoutModule, NgbModule, MaterialModule ],
+	imports: [ BrowserModule, BrowserAnimationsModule, LayoutModule, NgbModule, MaterialModule, AppRoutingModule ],
 	providers: [],
 	bootstrap: [ AppComponent ]
 })

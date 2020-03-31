@@ -5,11 +5,13 @@ import { AppMainComponent } from './app-main/app-main.component';
 const routes: Routes = [
 	{
 		path: '',
-		component: AppMainComponent
-	},
-	{
-		path: 'shop',
-		loadChildren: () => import('./shop/shop.module').then((m) => m.ShopModule)
+		component: AppMainComponent,
+		children: [
+			{
+				path: 'shop',
+				loadChildren: () => import('./shop/shop.module').then((m) => m.ShopModule)
+			}
+		]
 	}
 ];
 
